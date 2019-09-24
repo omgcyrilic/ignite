@@ -18,3 +18,4 @@ yarn start
 ### Notes
 
 Thanks for the opportunity, it was fun!
+Next steps: add a useReducer to dispatch actions to the state
