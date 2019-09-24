@@ -1,0 +1,57 @@
+$portica: #fadf63;
+$shark: #282c34;
+$shingle-fawn: #724f35;
+$white: #ffffff;
+
+.app {
+  align-items: center;
+  background-color: $shark;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  transition: background-color 0.2s;
+  &.lights-on {
+    background-color: $white;
+  }
+  h3 {
+    font-weight: normal;
+  }
+  .room {
+    padding: 20px;
+    &.lights-on {
+      background-color: $white;
+    }
+    .door {
+      background-color: transparent;
+      border: 0;
+      color: $shingle-fawn;
+      cursor: pointer;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .light-bulb {
+    position: absolute;
+    top: 0;
+    transition: color 0.2s;
+    &.lights-on {
+      color: $portica;
+    }
+  }
+  > p {
+    padding: 20px 0;
+  }
+  > p,
+  > h3 {
+    transition: color 0.2s;
+    &.lights-on {
+      color: $shark;
+    }
+  }
+}
