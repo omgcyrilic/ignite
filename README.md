@@ -4,7 +4,7 @@ React Code Challenge
 
 ### Features
 
-- latest React
+- latest React (create-react-app)
 - TSLint'ed
 - Prettier'ed
 
